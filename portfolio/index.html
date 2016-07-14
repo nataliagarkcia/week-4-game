@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<!--reset css page-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!--Bootstrap linked-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400' rel='stylesheet' type='text/css'>
+	<!--Jquery linked-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<!--my css page linked linked-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<head>
+	<!--Title of the game-->
+	<title> Crystals Collector </title>
+</head>
+<body>
+
+    <!--the title goes here-->
+	<div class="jumbotron">
+	<!--main Title of this page that goes on the jumbotron-->
+		<h1 class="mainTitle"> Crystals Collector </h1>
+	
+	</div>
+
+	
+	<div class="container">
+	
+	<div class="row">
+			<!--Instructions of the game-->
+			<div class="col-md-4" id="instructions">
+			<p>You will be given a  random number at the start of the game.<br><br>
+			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br><br>
+			The value of each crystal is hidden from you until you click on it.<br><br>
+			Each time when the game starts, the game will change the values of each crystal<br><br>
+			</p>
+			<div class="score">
+			wins:<h3 id="wins"></h3>
+			losses:<h3 id="losses"></h3>
+			</div>
+
+			</div>
+			<!--Score to guess-->
+			<div class="col-md-4">
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+				<h2  id="guessTitle"> Guess this Number!! </h2>
+				<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+				<script src="assets/javascript/game.js"></script>
+			<!--random number to be guess will be going here-->
+				<div class="guessNumber"></div>
+			</div>
+
+			<!--pictures of the gems-->
+			<div class="col-md-4" id="gems">
+			<div>
+			<img id="yellowgem" src="assets/images/img1.gif" class="crystals">
+			<img id="bluegem" src="assets/images/img2.gif" class="crystals">
+			<img id="greengem" src="assets/images/img3.gif" class="crystals">
+			<img id="redgem" src="assets/images/img4.gif" class="crystals">
+			</div>
+			<!--total score-->
+			<div class="totalScore">
+			<h3  id="guessTitle"> Your total score </h3>
+			<!--this will tell you the number that you have so far-->
+			<div class="myNumber"></div>
+			</div>
+			</div>
+	</div>	
+	</div>
+
+</body>
+</html>
